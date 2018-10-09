@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="karamel.ai 플랫폼">
+  <meta property="og:description" content="karamel.ai 플랫폼을 이용해 유저별 개인화 추천을 제공하세요!">
+  <meta property="og:image" content="https://karamel.ai/i/og_image.png">
+
+  <title>Karamel.ai</title>
+
+  <link href="./c/style.css" rel="stylesheet">
+  <link href="./lib/slick/slick.css" rel="stylesheet" type="text/css"/>
+  <link href="./lib/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.css">
+</head>
+<body>
+<div id="bg_slider">
+  <div class="bg-slide slide-1">
+    <img src="./i/1_back.png" alt="">
+  </div>
+  <div class="bg-slide slide-2">
+    <img src="./i/2_back.png" alt="">
+  </div>
+  <div class="bg-slide slide-3">
+    <img src="./i/3_back.png" alt="">
+  </div>
+</div>
+
+<div class="wrapper">
+  <h1><a href="https://karamel.ai"><img alt="Karamel.ai" src="./i/logo_s.png"></a></h1>
+  <div id="contents_slider">
+    <div class="contents-slide slide-1">
+      <div class="text">
+        <h2><span>매출을 증가</span>시키고 이탈률을 낮출 수 있습니다.</h2>
+        <p>대형 면세점 적용 후 <span>7.1%의 매출이 상승</span>하였고,
+          국내 최대 오픈마켓 적용 후 <span>인당 PV는 9% 증가</span>하였습니다.</p>
+      </div>
+      <img src="./i/1_img.png" alt="">
+    </div>
+    <div class="contents-slide slide-2">
+      <div class="text">
+        <h2>상품을 기반으로 <span>추천상품을 노출</span>할 수 있습니다.</h2>
+        <p>관심상품의 <span>대체재</span>를 노출하여 <span>구매결정을 유도</span>하고,
+          구매결정상품의 <span>보완재</span>를 노출하여 <span>추가구매를 유도</span>할 수 있습니다.</p>
+      </div>
+      <img src="./i/2_img.png" alt="">
+    </div>
+    <div class="contents-slide slide-3">
+      <div class="text">
+        <h2>실시간 개인화 추천을 통해 <span>클릭률을 증가</span>시킬 수 있습니다.</h2>
+        <p>고객이 1시간 전 본 상품까지 분석하여 실시간으로 최적화된 상품을 추천할 수 있습니다.
+          실시간 개인화 추천 적용으로 단순 인기 상품 추천 대비 <span>클릭률이 646%</span> 증가 하였습니다.</p>
+      </div>
+      <img src="./i/3_img.png" alt="">
+    </div>
+  </div>
+  <div id="description">
+    <h3 class="blue-underline"><span><b>개인화 상품 추천</b>과 <b>네이티브 광고</b>를 동시에!</span></h3>
+    <p>실시간 개인화 추천 기술을 통한 개인화 상품 추천과 맞춤 타겟팅으로 제공되는 네이티브 광고를 동시에 이용하세요.</p>
+    <img src="./i/description.png" alt="">
+    <button onclick="location.href='#form'">지금 신청하기</button>
+  </div>
+  <div class="contact-form">
+    <form action="" id="form" class="form" method="post">
+      <h3 class="blue-underline"><span><b>신청하기</b></span></h3>
+
+      <fieldset>
+        <legend>웹 사이트 URL</legend>
+        <input type="text" id="site_url" name="site_url" placeholder="www.godo.co.kr" required>
+      </fieldset>
+
+      <fieldset class="">
+        <legend>PC / Mobile 웹 사이트 지원 여부</legend>
+        <div class="site_type_list">
+          <input type="radio" id="radio_resp" name="site_resp_type" value="responsive" required>
+          <label for="radio_resp">반응형 웹 사이트</label>
+        </div>
+        <div class="site_type_list">
+          <input type="radio" id="radio_pc_mo" name="site_resp_type" value="pc_mo" required>
+          <label for="radio_pc_mo">PC/Mobile 각각 지원</label>
+        </div>
+        <div class="site_type_list">
+          <input type="radio" id="radio_pc" name="site_resp_type" value="pc" required>
+          <label for="radio_pc">PC만 지원</label>
+        </div>
+        <div class="site_type_list">
+          <input type="radio" id="radio_mo" name="site_resp_type" value="mo" required>
+          <label for="radio_mo">Mobile만 지원</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>월간 UV (예) 500,000</legend>
+        <input type="number" id="monthly_uv" name="monthly_uv" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>담당자 이름</legend>
+        <input type="text" id="name" name="name" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>담당자 전화번호</legend>
+        <input type="text" id="tel" name="tel" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>담당자 이메일 주소</legend>
+        <input type="email" id="email" name="email" type="email" placeholder="sugar@karamel.ai" required>
+      </fieldset>
+
+      <fieldset class="agreement">
+        <input type="checkbox" id="agreement" name="agreement" value="agreed" required>
+        <label for="agreement">개인정보
+          <a href="http://dable.io/ko/personaldatahandle/" target="_blank">수집 및 이용</a> 동의 (필수)</label>
+      </fieldset>
+      <input type="hidden" name="_referrer" value="">
+      <button type="submit" class="btn-submit">확인</button>
+    </form>
+  </div>
+  <img src="./i/donut_gray.png" alt="" class="pattern pattern-1">
+  <img src="./i/donut_gray.png" alt="" class="pattern pattern-2">
+  <img src="./i/donut_blue.png" alt="" class="pattern pattern-3">
+  <img src="./i/donut_blue.png" alt="" class="pattern pattern-4">
+</div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64397972-11"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-64397972-11');
+</script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<script src="./lib/slick/slick.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+<script src="./lib/send_to_google_form.js"></script>
+<script src="./lib/jquery.serializeObject.min.js"></script>
+
+<script>
+	var contents_slider_conf = {
+		dots: true,
+		arrows: true,
+		infinite: true,
+		speed: 700,
+		autoplay: true,
+		autoplaySpeed: 8000,
+		asNavFor: '#bg_slider',
+	};
+
+	var bg_slider_conf = {
+		dots: false,
+		infinite: true,
+		arrows: false,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		asNavFor: '#contents_slider',
+	};
+
+	$('#contents_slider').slick(contents_slider_conf);
+	$('#bg_slider').slick(bg_slider_conf);
+
+	var referrer = document.referrer;
+	var config = {
+		method: 'post',
+		form_selector: "#form",
+		url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZWBoJLV3bOzERVb4daN-CUGUtKmnHehJQbjAzJa61zx3kNw/formResponse',
+		field_map: {
+			site_url: 'entry.125306543',
+			site_resp_type: 'entry.447112997',
+			monthly_uv: 'entry.1814227416',
+			name: 'entry.256868845',
+			tel: 'entry.27160786',
+			email: 'entry.2129970422',
+			agreement: 'entry.1137095674',
+			_referrer: 'entry.1171595722'
+		},
+		on_success: {
+			comment: "문의 감사합니다! Karamel.ai 팀이 곧 연락 드리겠습니다.",
+			callback: function () {
+				$('form')[0].reset();
+			},
+		},
+		validations: {
+		},
+		value_override_string: {
+			_referrer: referrer
+		}
+	};
+	initFormHandler(config);
+
+</script>
+</body>
+</html>

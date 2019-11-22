@@ -3,3 +3,9 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# OS
+.DS_Store
+
+# etc
+*.*.swp
